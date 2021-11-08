@@ -1,30 +1,28 @@
-import { Flex, Input , Icon } from "@chakra-ui/react";
-import { RiSearchLine } from "react-icons/ri";
+import { Box, Flex, Stack } from "@chakra-ui/layout";
+import {Logo} from "./Logo"
+import { NotificationNav } from "./NotificationNav";
+import { Profile } from "./Profile";
+import {SearchBox} from "./SearchBox"
 export function Header(){
     return(
         <Flex
-            as="label"
-            flex="1"
-            py="4"
-            px="8"
-            ml="6"
-            maxWidth={400}
-            alignSelf="center"
-            color="gray.500"
-            position="relative"
-            bg="gray.700"
-            borderRadius="full"
-            >
-                <Input
-                color="gray.50"
-                variant="unstyled"
-                px="4"
-                mr="4"
-                border="0"
-                placeholder="Buscar na plataforma"
-                _placeholder={{color: 'gray.400'}}
-                />
-                <Icon as={RiSearchLine} />
+        w="100%"
+        maxWidth={1480}
+        h="20"
+        mt="6"
+        px="15"
+        align="center"
+        >
+            <Flex align="center" ml="auto">
+                 <Logo />
+                <SearchBox />
             </Flex>
+                
+                
+            <Flex>
+                <NotificationNav />
+                <Profile />
+            </Flex>
+        </Flex>
     );
 }

@@ -6,8 +6,8 @@ export function SearchBox(){
             as="label"
             flex="1"
             py="4"
-            px="8"
-            ml="6"
+            px="30"
+            ml="10"
             maxWidth={400}
             alignSelf="center"
             color="gray.500"
