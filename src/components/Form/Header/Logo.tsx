@@ -3,7 +3,7 @@ import { Flex, Text} from "@chakra-ui/layout";
 export function Logo(){
     return(
         <Text 
-            fontsize="3xl"
+            fontsize={["2xl","3xl"]}
             fontWeight="bold" 
             letterSpacing="tight" 
             w="64"

@@ -1,12 +1,12 @@
-import { Flex, SimpleGrid, Box, Text, theme } from "@chakra-ui/react";
+import { Flex, SimpleGrid, Box, Text } from "@chakra-ui/react";
 import { Header } from "../components/Form/Header";
 import dynamic from 'next/dynamic'
 import { Sidebar } from "../components/Form/Sidebar";
-
+import theme from "@chakra-ui/theme";
 
 export default function Dashboard(){
 
-    const Chart = dynamic(()=> import('react-apexcharts'), {
+    const Chart = dynamic( ()=> import('react-apexcharts'), {
         ssr: false,
     })
 
