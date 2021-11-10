@@ -1,7 +1,7 @@
 import { Flex, SimpleGrid, Box, Text } from "@chakra-ui/react";
 import { Header } from "../components/Form/Header";
 import dynamic from 'next/dynamic'
-import { Sidebar } from "../components/Form/Sidebar";
+import { Sidebar } from "../components/Form/SideBar/index";
 import theme from "@chakra-ui/theme";
 
 export default function Dashboard(){
@@ -70,7 +70,7 @@ export default function Dashboard(){
                 <Sidebar/>
                 <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
                     <Box
-                    p="8"
+                    p={["6","8"]}
                     bg="gray.700"
                     borderRadius={8}
                         //pb="4"
@@ -79,7 +79,7 @@ export default function Dashboard(){
                         <Chart type={"area"} options={options} height={160} series={series}  />
                     </Box>
                     <Box
-                    p="8"
+                    p={["6","8"]}
                     bg="gray.700"
                     borderRadius={8}
                         //pb="4"

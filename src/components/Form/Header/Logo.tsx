@@ -1,4 +1,4 @@
-import { Flex, Text} from "@chakra-ui/layout";
+import {Text} from "@chakra-ui/layout";
 
 export function Logo(){
     return(
